@@ -2,7 +2,7 @@ BaseCon
 Decibel
 KVS
 Msgr
-mysql-connector
+mysql-connector-python
 pymemcache
 redis
 SeCo
