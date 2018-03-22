@@ -1,0 +1,8 @@
+BaseCon
+Decibel
+KVS
+Msgr
+mysql-connector
+pymemcache
+redis
+SeCo
