@@ -80,7 +80,7 @@ def create_config(file_path):
 
 # create argument parser instance
 argparse = ArgumentParser(
-  prog='python[2|3] -m utilite', description='''
+  prog='python[2|3] -m utilize', description='''
     Initailize default config file for Utilize class.
   ''', epilog='Happy coding :-)'
 )
