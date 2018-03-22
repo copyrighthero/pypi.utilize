@@ -6,7 +6,7 @@ from codecs import open
 from os import path
 
 # import library for metadata
-from utilite import __author__, __license__, __version__
+from utilize import __author__, __license__, __version__
 
 # project absolute directory
 DIRECTORY = path.abspath(path.dirname(__file__))
@@ -25,12 +25,12 @@ with open(
 
 # project setup parameters
 setup(
-  name = 'Utilite',
+  name = 'Utilize',
   version = __version__,
   description = 'Python utilities for most projects.',
   long_description = PROJECT_README,
-  url = 'https://www.github.com/copyrighthero/Utilite',
-  download_url = 'https://www.github.com/copyrighthero/Utilite',
+  url = 'https://www.github.com/copyrighthero/Utilize',
+  download_url = 'https://www.github.com/copyrighthero/Utilize',
   author = __author__,
   author_email = 'copyrighthero@gmail.com',
   license = __license__,
@@ -55,13 +55,13 @@ setup(
     'Topic :: Utilities'
   ),
   keywords = 'Python Common Utilities',
-  py_modules = ("utilite", ),
+  py_modules = (),
   packages = find_packages(exclude = ()),
   install_requires = REQUIREMENTS,
   package_data = {},
   data_files = (),
   entry_points = {},
   project_urls = {
-    'Source': 'https://www.github.com/copyrighthero/Utilite'
+    'Source': 'https://www.github.com/copyrighthero/Utilize'
   }
 )

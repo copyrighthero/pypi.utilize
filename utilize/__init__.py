@@ -1,25 +1,24 @@
 # Author: Hansheng Zhao <copyrighthero@gmail.com> (https://www.zhs.me)
 
-from configparser import RawConfigParser
 
 # import directive
 __all__ = (
   '__author__', '__license__',
-  '__version__', 'Utilite'
+  '__version__', 'Utilize'
 )
 # package metadata
 __author__ = 'Hansheng Zhao'
 __license__ = 'BSD-2-Clause + MIT'
-__version__ = '0.5.0'
+__version__ = '1.0.0'
 
 
-class Utilite(object):
-  """ Utilite class for project resources """
+class Utilize(object):
+  """ Utilize class for common resources """
 
   __slots__ = (
-    '_config', '_basecon', '_seco', '_kvs',
-    '_decibel', '_redis', '_memcached',
-    '_message_broker'
+    '_config',
+    '_basecon', '_seco', '_kvs', '_decibel',
+    '_redis', '_memcached', '_message_broker'
   )
 
   def __init__(self, config = './config.ini'):
@@ -27,6 +26,8 @@ class Utilite(object):
     Resource class constructor
     :param config: mixed, the config resource
     """
+    # import ini file config parser
+    from configparser import RawConfigParser
     # read config from config resource
     self._config = RawConfigParser()
     self.update(config)
